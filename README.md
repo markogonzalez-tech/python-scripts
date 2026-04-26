@@ -1,19 +1,20 @@
 # Password Checker (Python)
 
 ## Description
-This project is a simple Python script that evaluates the strength of a password based on basic security criteria.
+This project is a Python script that evaluates the strength of a password based on common security rules and provides feedback to improve it.
 
 ## Technologies Used
 - Python
 
-## Functionality
-- Checks password length
-- Verifies presence of uppercase and lowercase letters
-- Verifies presence of numeric characters
-- Classifies password as weak, medium, or strong
+## Features
+- Checks minimum length
+- Detects uppercase and lowercase letters
+- Detects numeric characters
+- Detects special characters
+- Provides detailed feedback on weak passwords
 
 ## Project Objective
-The goal of this project is to introduce basic cybersecurity concepts and password validation using Python.
+The goal of this project is to apply basic cybersecurity concepts and improve password validation logic.
 
 ## How to Run
 
