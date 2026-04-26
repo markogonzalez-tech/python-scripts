@@ -8,15 +8,15 @@ def check_password_strength(password):
     issues = []
 
     if length < 8:
-        issues.append("Password is too short")
+        issues.append("Password must be at least 8 characters long")
     if not has_upper:
-        issues.append("Missing uppercase letter")
+        issues.append("Add at least one uppercase letter")
     if not has_lower:
-        issues.append("Missing lowercase letter")
+        issues.append("Add at least one lowercase letter")
     if not has_digit:
-        issues.append("Missing number")
+        issues.append("Add at least one number")
     if not has_special:
-        issues.append("Missing special character")
+        issues.append("Add at least one special character")
 
     if len(issues) == 0:
         return "Strong password"
@@ -24,5 +24,12 @@ def check_password_strength(password):
         return "Weak password:\n- " + "\n- ".join(issues)
 
 
-password = input("Enter a password: ")
-print(check_password_strength(password))
+def main():
+    print("Password Strength Checker")
+    password = input("Enter your password: ")
+    result = check_password_strength(password)
+    print(result)
+
+
+if __name__ == "__main__":
+    main()
